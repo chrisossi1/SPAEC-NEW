@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4nl3ql8lnt1p"]
+
+[ext_resource type="Script" path="res://GameObjects/asteroid.gd" id="1_h7bkn"]
+[ext_resource type="PackedScene" uid="uid://dbfsyo3da23te" path="res://Util/rigid_body_2d.tscn" id="2_xht4i"]
+
+[node name="Asteroid" type="Node2D"]
+script = ExtResource("1_h7bkn")
+metadata/_edit_horizontal_guides_ = [-88.0]
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_xht4i")]

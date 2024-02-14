@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dso6nsdt5gosu"]
+
+[ext_resource type="Script" path="res://GameObjects/ship.gd" id="1_8tiuj"]
+[ext_resource type="PackedScene" uid="uid://dbfsyo3da23te" path="res://Util/rigid_body_2d.tscn" id="2_nfyot"]
+[ext_resource type="Script" path="res://GameObjects/engine.gd" id="3_hoq2u"]
+
+[node name="Ship" type="Node2D"]
+script = ExtResource("1_8tiuj")
+metadata/_edit_horizontal_guides_ = [-88.0]
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_nfyot")]
+
+[node name="Engine" type="Node2D" parent="."]
+script = ExtResource("3_hoq2u")

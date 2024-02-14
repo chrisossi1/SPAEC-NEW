@@ -1,0 +1,62 @@
+MATERIALS
+
+Solid
+Fluid
+Energy?
+
+
+Solid
+	RigidBody
+	Composition (Substance makeup)
+		Mass
+		Volume/Density
+		Durability
+		Hardness
+		Heat Capacity
+		Melting Point
+		Color
+	Coating
+		{Fluid:location along surface} pairs
+		Chemical Interactions
+		
+	Heat
+		Total Heat
+		Heat Concentration Points
+		
+	Integrity
+	
+Fluid
+	Fluid Composition
+		Mass
+		Volume/Density
+		Viscosity
+		Boiling Point
+		Freezing Point
+		Color
+		
+Solid-Solid Interactions
+	Collision
+		Heat Generation
+		Sparks
+		Damage
+	Heat Transfer
+	
+Solid-Fluid Interaction
+	Displacement of fluid
+	Coating of solid
+	Momentum transfer
+	Heat transfer
+	Breakapart/Splashing
+	Chemical Interactions? Or does coating take care of this
+	Coating Chemical interaction?
+	
+Fluid-Fluid interaction
+	Coalescing/rejecting
+	Heat transfer
+	Chemical Interaction
+	
+Interactions:
+	Endo/exothermic
+	Energy production
+	Conversion of reactants to products
+	Gas production/pressure generation

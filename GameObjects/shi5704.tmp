@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dso6nsdt5gosu"]
+
+[ext_resource type="Script" path="res://GameObjects/ship.gd" id="1_8tiuj"]
+[ext_resource type="PackedScene" uid="uid://dbfsyo3da23te" path="res://Util/rigid_body_2d.tscn" id="2_nfyot"]
+[ext_resource type="Script" path="res://GameObjects/engine.gd" id="3_hoq2u"]
+
+[node name="Ship" type="Node2D"]
+script = ExtResource("1_8tiuj")
+metadata/_edit_horizontal_guides_ = [-88.0]
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_nfyot")]
+
+[node name="Engine" type="Node2D" parent="."]
+script = ExtResource("3_hoq2u")
+rigidBody = Object(RigidBody2D,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"position":Vector2(0, 0),"rotation":0.0,"scale":Vector2(1, 1),"skew":0.0,"disable_mode":0,"collision_layer":1,"collision_mask":1,"collision_priority":1.0,"input_pickable":false,"mass":1.0,"physics_material_override":null,"gravity_scale":1.0,"center_of_mass_mode":0,"center_of_mass":Vector2(0, 0),"inertia":0.0,"sleeping":false,"can_sleep":true,"lock_rotation":false,"freeze":false,"freeze_mode":0,"custom_integrator":false,"continuous_cd":0,"max_contacts_reported":0,"contact_monitor":false,"linear_velocity":Vector2(0, 0),"linear_damp_mode":0,"linear_damp":0.0,"angular_velocity":0.0,"angular_damp_mode":0,"angular_damp":0.0,"constant_force":Vector2(0, 0),"constant_torque":0.0,"script":Resource("res://Util/rigidBody.gd"))
+

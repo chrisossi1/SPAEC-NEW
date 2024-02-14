@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bplxsm0mdgljr"]
+
+[ext_resource type="PackedScene" uid="uid://c4nl3ql8lnt1p" path="res://GameObjects/asteroid.tscn" id="1_kiqgi"]
+[ext_resource type="Script" path="res://Top Level Components/main.gd" id="1_r4b8u"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_r4b8u")
+
+[node name="Asteroid" parent="." instance=ExtResource("1_kiqgi")]
+position = Vector2(175, 158)
